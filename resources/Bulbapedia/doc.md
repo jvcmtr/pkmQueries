@@ -1,12 +1,6 @@
 #### data source:
-https://github.com/fanzeyi/pokemon.json/blob/master/pokedex.json (contains data up to gen 7 )
-
-
-### their README.md : 
-
-## Pokemon.json
-
-This repository provides a basic dataset of all Pokemons.
+[github.com/fanzeyi](https://github.com/fanzeyi/pokemon.json/blob/master/pokedex.json) (contains data up to gen 7 )
+[github.com/Purukito](https://github.com/Purukitto/pokemon-data.json/blob/master/pokedex.json) (contains up to gen 8)
 
 #### Copyright Notice
 
