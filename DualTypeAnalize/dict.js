@@ -5,7 +5,9 @@ export class keyValue{
 
     constructor(_keyArray, value = null ){
         this.key = _keyArray
-        this.valueArray.push(value)
+        if(value != null){
+            this.valueArray.push(value)
+        }
         return this
     }
 
@@ -24,15 +26,16 @@ export class keyValue{
     }
 
     add(value){
-        /*
-        if(this.valueArray.includes(value)){
+        if(value == null){
             return false
-        }*/
+        }
+        
         this.valueArray.push(value)
         return true
     }
 
     appendValues(values){
+        if(values)
         for (let i = 0; i < values.length; i++) {
             this.add(values[i])
         }
@@ -44,7 +47,7 @@ export class keyValue{
 
 }
 
-export class dict{
+export default class dict{
     resource = []
     add(key, value){
         let a = new keyValue(key, value)
@@ -60,5 +63,13 @@ export class dict{
             }
         }
         this.resource.push(keyValue)
+    }
+
+    get(key){
+        return this.resource.filter(e => e.equals(key))[0].valueArray
+    }
+
+    getAllKeys(){
+        return this.resource.map(value => value.key)
     }
 }

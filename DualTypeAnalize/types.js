@@ -1,0 +1,20 @@
+export const AllTypes = ["Grass","Fire","Water","Bug","Normal","Poison","Electric","Ground","Fairy","Fighting","Psychic","Rock","Ghost","Ice","Dragon","Dark","Steel","Flying"]
+
+export const AllDualTypes = [["Grass"],["Grass","Fire"],["Grass","Water"],["Grass","Bug"],["Grass","Normal"],["Grass","Poison"],["Grass","Electric"],["Grass","Ground"],["Grass","Fairy"],["Grass","Fighting"],["Grass","Psychic"],["Grass","Rock"],["Grass","Ghost"],["Grass","Ice"],["Grass","Dragon"],["Grass","Dark"],["Grass","Steel"],["Grass","Flying"], 
+	["Fire"],["Fire","Water"],["Fire","Bug"],["Fire","Normal"],["Fire","Poison"],["Fire","Electric"],["Fire","Ground"],["Fire","Fairy"],["Fire","Fighting"],["Fire","Psychic"],["Fire","Rock"],["Fire","Ghost"],["Fire","Ice"],["Fire","Dragon"],["Fire","Dark"],["Fire","Steel"],["Fire","Flying"], 
+	["Water"],["Water","Bug"],["Water","Normal"],["Water","Poison"],["Water","Electric"],["Water","Ground"],["Water","Fairy"],["Water","Fighting"],["Water","Psychic"],["Water","Rock"],["Water","Ghost"],["Water","Ice"],["Water","Dragon"],["Water","Dark"],["Water","Steel"],["Water","Flying"], 
+	["Bug"],["Bug","Normal"],["Bug","Poison"],["Bug","Electric"],["Bug","Ground"],["Bug","Fairy"],["Bug","Fighting"],["Bug","Psychic"],["Bug","Rock"],["Bug","Ghost"],["Bug","Ice"],["Bug","Dragon"],["Bug","Dark"],["Bug","Steel"],["Bug","Flying"], 
+	["Normal"],["Normal","Poison"],["Normal","Electric"],["Normal","Ground"],["Normal","Fairy"],["Normal","Fighting"],["Normal","Psychic"],["Normal","Rock"],["Normal","Ghost"],["Normal","Ice"],["Normal","Dragon"],["Normal","Dark"],["Normal","Steel"],["Normal","Flying"], 
+	["Poison"],["Poison","Electric"],["Poison","Ground"],["Poison","Fairy"],["Poison","Fighting"],["Poison","Psychic"],["Poison","Rock"],["Poison","Ghost"],["Poison","Ice"],["Poison","Dragon"],["Poison","Dark"],["Poison","Steel"],["Poison","Flying"], 
+	["Electric"],["Electric","Ground"],["Electric","Fairy"],["Electric","Fighting"],["Electric","Psychic"],["Electric","Rock"],["Electric","Ghost"],["Electric","Ice"],["Electric","Dragon"],["Electric","Dark"],["Electric","Steel"],["Electric","Flying"], 
+	["Ground"],["Ground","Fairy"],["Ground","Fighting"],["Ground","Psychic"],["Ground","Rock"],["Ground","Ghost"],["Ground","Ice"],["Ground","Dragon"],["Ground","Dark"],["Ground","Steel"],["Ground","Flying"], 
+	["Fairy"],["Fairy","Fighting"],["Fairy","Psychic"],["Fairy","Rock"],["Fairy","Ghost"],["Fairy","Ice"],["Fairy","Dragon"],["Fairy","Dark"],["Fairy","Steel"],["Fairy","Flying"], 
+	["Fighting"],["Fighting","Psychic"],["Fighting","Rock"],["Fighting","Ghost"],["Fighting","Ice"],["Fighting","Dragon"],["Fighting","Dark"],["Fighting","Steel"],["Fighting","Flying"], 
+	["Psychic"],["Psychic","Rock"],["Psychic","Ghost"],["Psychic","Ice"],["Psychic","Dragon"],["Psychic","Dark"],["Psychic","Steel"],["Psychic","Flying"], 
+	["Rock"],["Rock","Ghost"],["Rock","Ice"],["Rock","Dragon"],["Rock","Dark"],["Rock","Steel"],["Rock","Flying"], 
+	["Ghost"],["Ghost","Ice"],["Ghost","Dragon"],["Ghost","Dark"],["Ghost","Steel"],["Ghost","Flying"], 
+	["Ice"],["Ice","Dragon"],["Ice","Dark"],["Ice","Steel"],["Ice","Flying"], 
+    ["Dragon"],["Dragon","Dark"],["Dragon","Steel"],["Dragon","Flying"], 
+	["Dark"],["Dark","Steel"],["Dark","Flying"], 
+	["Steel"],["Steel","Flying"], 
+	["Flying"]]
