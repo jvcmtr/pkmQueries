@@ -8,6 +8,14 @@ var getCongig = {
 async function myFetch(path){
     let response = await fetch(path, getCongig)
     let data = await response.json()
+
+    // debug
+    if(data.name != null){
+        console.log(`[${data.name}] Successfull \t uri: ${path.replace(apiRoot, "")}`)
+    }else{
+        console.log("## ERROR? nao contem nome")
+    }
+
     return data
 }
 
@@ -85,6 +93,5 @@ export async function getAllPokemon(LIMIT){
     all = all.results;
 
     let responseList = all.map(pokemonURL => getPokemon(pokemonURL.url));
-
     return Promise.all(responseList);
 }

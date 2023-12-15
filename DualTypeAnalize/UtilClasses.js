@@ -24,11 +24,18 @@ export class keyValue{
     }
 
     add(value){
+        /*
         if(this.valueArray.includes(value)){
             return false
-        }
+        }*/
         this.valueArray.push(value)
         return true
+    }
+
+    appendValues(values){
+        for (let i = 0; i < values.length; i++) {
+            this.add(values[i])
+        }
     }
 
     remove(value){
@@ -48,7 +55,7 @@ export class dict{
         for(var i=0; i<this.resource.length; i++){
             var element = this.resource[i]; 
             if(element.equals(keyValue.key)){
-                element.add(keyValue.value)
+                element.appendValues(keyValue.valueArray)
                 return
             }
         }

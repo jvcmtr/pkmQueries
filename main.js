@@ -3,12 +3,8 @@ import * as DualType from "./DualTypeAnalize/UtilClasses.js"
 
 const POKEMON_PATH = "./DAL/pokemonData.json"
 
+repos.loadFromLocalBulba(POKEMON_PATH)
 
-await repos.updateLocalDataFromApi(POKEMON_PATH);
-console.log("\tDONE !")
-
-
-/*
 var DTs = new DualType.dict()
 var pkms = repos.getPokemon(POKEMON_PATH)
 
@@ -24,14 +20,14 @@ pkms.forEach(pokemon => {
 });
 
 DTs.resource.forEach(element => {
-    console.log(element.key + "\t:\t" + element.valueArray.length)
+    console.log("  "+element.valueArray.length + "\t:" + element.key )
 })
-*/
 
-/*
-var pkms = repos.getPokemon(POKEMON_PATH)
-console.log(pkms.length)
-console.log(pkms[0])
-console.log(pkms[4])
-console.log(pkms[7])
-*/
+
+console.log(DTs.resource[0].key)
+console.log(DTs.resource[0].valueArray)
+
+console.log("")
+console.log(DTs.resource[13].key)
+console.log(DTs.resource[13].valueArray)
+

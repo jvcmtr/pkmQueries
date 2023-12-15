@@ -1,4 +1,4 @@
-class Pokemon {
+export default class Pokemon {
     name = ""
     dexN = 0
     id = 0
