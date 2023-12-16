@@ -66,7 +66,11 @@ export default class dict{
     }
 
     get(key){
-        return this.resource.filter(e => e.equals(key))[0].valueArray
+        let a = this.resource.filter(e => e.equals(key))[0]
+        if(a!=null){
+            return a.valueArray
+        }
+        return new keyValue(key, null)
     }
 
     getAllKeys(){
