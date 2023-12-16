@@ -5,7 +5,7 @@ const POKEMON_PATH = "./DAL/pokemonData.json"
 
 export function countDualTypes(){
     var DTs = divideByDualTypes(getAllPkm())
-    DTs = DTs.sort(a,b => a.length-b.length)
+    DTs.resource = DTs.resource.sort((a,b) => a.valueArray.length - b.valueArray.length)
 
     DTs.resource.forEach(element => {
     console.log("  "+element.valueArray.length + "\t:" + element.key )
